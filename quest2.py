@@ -7,16 +7,18 @@ class Account:
   
   def debit(self,amount):  #debit method
     self.balance-=amount
-    print("RS"amount,'was debited ')
+    print("RS",amount,'was debited ')
 
   def credit(self,amount):  #debit method
     self.balance+=amount
-    print("RS"amount,'was credited ')
+    print("RS",amount,'was credited ')
 
   def total_balance(self):
     return self.balance  #debit method
     
 
 
-acc1=Account(10000,123456)
+acc1=Account(500,123456)
+acc1.debit(100)
+acc1.credit(200)
 print(acc1.balance,acc1.account_no)
